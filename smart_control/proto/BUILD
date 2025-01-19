@@ -31,6 +31,7 @@ proto_library(
 
 py_proto_library(
     name = "smart_control_reward_py_pb2",
+    api_version = 2,
     visibility = [
         "//corp/ml/smart_buildings/smart_control:packages",
         "//third_party/py/smart_buildings/smart_control/environment:__pkg__",
@@ -50,6 +51,7 @@ proto_library(
 
 py_proto_library(
     name = "smart_control_building_py_pb2",
+    api_version = 2,
     visibility = [
         "//corp/ml/smart_buildings/smart_control:packages",
         "//third_party/py/smart_buildings/smart_control/environment:__pkg__",
@@ -68,5 +70,6 @@ proto_library(
 
 py_proto_library(
     name = "smart_control_normalization_py_pb2",
+    api_version = 2,
     deps = [":smart_control_normalization_proto"],
 )
